@@ -50,7 +50,10 @@
   </style>
 </head>
 <body>
-<table>
+  <strong>
+    transition是支持visibility的
+  </strong>
+  <table>
     <tr>
       <td>栏目1</td>
       <td>栏目2</td>
@@ -79,7 +82,9 @@
   <br />
   <br />
   <br />
-  <br />
+  <strong>
+    但是transition是不支持display的
+  </strong>
   <table>
     <tr>
       <td>栏目1</td>
@@ -104,5 +109,27 @@
       </td>
     </tr>
   </table>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+    visibility 是不参与计数的
+  </p>
+  <ol>
+    <li>css</li>
+    <li style="visibility: hidden;">less</li>
+    <li>sass</li>
+  </ol>
+  <br />
+  <br />
+  <br />
+  <p>
+    display 是参与计数的
+  </p>
+  <ol>
+    <li>css</li>
+    <li style="display: none;">less</li>
+    <li>sass</li>
+  </ol>
 </body>
 </html>
