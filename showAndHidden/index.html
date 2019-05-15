@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #dis3 {
+      height: 100px;
+      width: 100px;
+      background: red;
+      position: absolute;
+    }
+    #dis4 {
+      height: 100px;
+      width: 100px;
+      background: red;
+      position: absolute;
+      clip: rect(0, 0, 0, 0)
+    }
+    #dis3:hover {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+<!-- 如果希望元素不可见、同时不占据空间、辅助设备无法访问，同时不渲染，可以使用<script>变 -->
+<script>
+  <img src="//www.baidu.com/img/baidu_resultlogo@2.png" />
+</script>
+<!-- 如果希望元素不可见、同时不占据空间、辅助设备无法访问，同时不渲染，但资源有加载，可以使用display: none -->
+<img src="//www.baidu.com/img/baidu_resultlogo@2.png" style="display: none"/> 
+<!-- 如果希望元素不可见、同时不占据空间、辅助设备无法访问，同时不渲染, 但显示和隐藏的时候可以有淡入淡出的效果 -->
+<div id="dis3"></div>
+<!-- 如果希望元素不可见、同时不占据空间、键盘可以访问，同时不渲染, 可以使用clip裁剪隐藏 -->
+<div id="dis4"></div>
+</body>
+</html>
