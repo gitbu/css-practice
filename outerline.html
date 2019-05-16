@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .left, .right, .border-left, .border-right {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+    }
+    .left, .border-left {
+      background: red;
+    }
+    .right {
+      background: yellow;
+      outline: 20px solid blue;
+    }
+    .border-right {
+      background: yellow;
+      border: 20px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    outline是不占据空间的
+  </p>
+  <div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <p>
+    border是占据空间的
+  </p>
+  <div>
+    <div class="border-left"></div>
+    <div class="border-right"></div>
+  </div>
+  
+</body>
+</html>
