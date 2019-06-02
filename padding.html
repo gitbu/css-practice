@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- padding层叠效果 -->
+  <h1>内联元素设置了padding 垂直方向会有层叠效果并且影响布局</h1>
+  <div style="overflow: auto">
+    <span>
+      hello
+    </span>
+    <span style="border: 1px solid red; padding: 30px;">
+      world
+    </span>
+  </div>
+  <footer>
+    this is footer
+  </footer>
+  <!-- end -->
+
+  <!-- padding 百分比计算 -->
+    <div style="height: 100px; width: 200px; border: 1px solid red;">
+      <div style="padding: 10%; background: blue;"></div>
+    </div>
+  <!-- end -->
+  
+</body>
+</html>
