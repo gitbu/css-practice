@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .empty {
+      background: blue;
+    }
+    .empty > div {
+      margin: 50px;
+    }
+    .father {
+      height: 100px;
+      background: blue;
+    }
+    .son {
+      margin-top: 50px;
+      height: 10px;
+      background: red;
+    }
+    .neighbor {
+      border: 1px solid red;
+    }
+    .neighbor > div {
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 空元素的margin值会重叠 -->
+  <div class="empty">
+    <div></div>
+  </div>
+  <!-- 父子元素margin重叠 -->
+  <div class="father">
+      <div class="son"></div>
+  </div>
+  <!-- 相邻兄弟元素margin会重叠 -->
+  <div class="neighbor">
+    <div style="margin-bottom: -10px;">a</div>
+    <div style="margin-top: 10px;">a</div>
+  </div>
+  
+</body>
+</html>
